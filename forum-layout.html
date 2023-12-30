@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>게시판</title>
+  <!-- 여기에 필요한 스타일 시트 및 외부 스크립트를 추가할 수 있습니다. -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #board {
+      margin: 20px;
+    }
+
+    .post {
+      border: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    #form {
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    #pagination {
+      text-align: center;
+    }
+
+    #pagination a {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div id="header">
+  <h1>게시판</h1>
+</div>
+
+<div id="board">
+  <!-- 게시물 목록 -->
+  <div class="post">
+    <h2>게시물 제목 1</h2>
+    <p>게시물 내용이 여기에 들어갑니다.</p>
+  </div>
+
+  <div class="post">
+    <h2>게시물 제목 2</h2>
+    <p>게시물 내용이 여기에 들어갑니다.</p>
+  </div>
+
+  <!-- 추가적인 게시물을 필요에 따라 추가할 수 있습니다. -->
+</div>
+
+<div id="pagination">
+  <!-- 페이징 링크 -->
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <!-- 필요에 따라 더 많은 페이지를 추가할 수 있습니다. -->
+</div>
+
+<div id="form">
+  <!-- 게시물 작성 폼 -->
+  <h2>새 게시물 작성</h2>
+  <form action="#" method="post">
+    <label for="title">제목:</label>
+    <input id="title" name="title" required type="text">
+
+    <label for="content">내용:</label>
+    <textarea id="content" name="content" required rows="4"></textarea>
+
+    <button type="submit">작성</button>
+  </form>
+</div>
+
+<div id="footer">
+  <p>&copy; 2023 게시판. All rights reserved.</p>
+</div>
+
+</body>
+</html>
